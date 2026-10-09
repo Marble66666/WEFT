@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="730" viewBox="0 0 500 365" role="img" aria-labelledby="title desc">
+  <title id="title">WEFT logo - 02B</title>
+  <desc id="desc">Symmetric navy warp strands interwoven with a cyan weft. Editable Bezier paths with transparent background and crossing gaps. No embedded raster images, fonts, masks, or external assets.</desc>
+  <path id="warp-left-upper" fill="#183F73" d="M 94 25 L 122 25 C 135.254834 25 146 35.745166 146 49 L 146 135 C 123 129 93 129 70 135 L 70 49 C 70 35.745166 80.745166 25 94 25 Z"/>
+  <path id="warp-left-lower" fill="#183F73" d="M 70 221 C 93 213 123 213 146 221 L 146 316 C 146 329.254834 135.254834 340 122 340 L 94 340 C 80.745166 340 70 329.254834 70 316 Z"/>
+  <path id="warp-right-upper" fill="#183F73" d="M 406 25 L 378 25 C 364.745166 25 354 35.745166 354 49 L 354 135 C 377 129 407 129 430 135 L 430 49 C 430 35.745166 419.254834 25 406 25 Z"/>
+  <path id="warp-right-lower" fill="#183F73" d="M 430 221 C 407 213 377 213 354 221 L 354 316 C 354 329.254834 364.745166 340 378 340 L 406 340 C 419.254834 340 430 329.254834 430 316 Z"/>
+  <path id="weft-left" fill="#13B7D4" d="M 203 165 C 168 155 139 142 108 142 C 89 142 68 145 49 151 C 34 155 25 166 25 181 C 25 198 37 213 51 213 C 63 213 82 204 107 204 C 137 204 170 218 203 231 Z"/>
+  <path id="weft-right" fill="#13B7D4" d="M 297 165 C 332 155 361 142 392 142 C 411 142 432 145 451 151 C 466 155 475 166 475 181 C 475 198 463 213 449 213 C 437 213 418 204 393 204 C 363 204 330 218 297 231 Z"/>
+  <path id="warp-center-upper" fill="#183F73" d="M 236 25 L 264 25 C 277.254834 25 288 35.745166 288 49 L 288 231 C 263 239 237 239 212 231 L 212 49 C 212 35.745166 222.745166 25 236 25 Z"/>
+  <path id="warp-center-lower" fill="#183F73" d="M 212 243 C 237 251 263 251 288 243 L 288 316 C 288 329.254834 277.254834 340 264 340 L 236 340 C 222.745166 340 212 329.254834 212 316 Z"/>
+</svg>
