@@ -44,10 +44,12 @@ strong { color: var(--ink); font-weight: 600; }
 
 /* The title reads as a paper title, not an oversized product logo. */
 .hero { padding-block: 5.25rem 4.5rem; }
+.hero > .reading { width: min(60rem,calc(100% - var(--gutter))); }
 .hero .eyebrow { display: flex; align-items: center; }
 .hero .eyebrow::before { content: ''; width: 1.5rem; height: 2px; margin-right: .75rem; background: var(--accent); flex-shrink: 0; }
 .hero h1 { font: 400 clamp(2.35rem,4.5vw,3.25rem)/1.13 var(--serif); letter-spacing: -.045em; margin-top: 1.5rem; text-wrap: balance; }
 .hero-wordmark { color: var(--ink); white-space: nowrap; } .paper-title-text { display: inline; }
+.title-ending { display: block; }
 .hero-deck { max-width: 40rem; margin-top: 1.75rem; font-size: 1.0625rem; line-height: 1.8; }
 .resource-links { display: flex; flex-wrap: wrap; align-items: center; gap: .65rem; margin-top: 1.75rem; }
 .resource-link { display: inline-flex; align-items: center; gap: .6rem; min-height: 2.75rem; padding: .6rem .9rem; border: 1px solid var(--line); border-radius: 4px; background: var(--surface); font-size: .8125rem; line-height: 1.4; font-weight: 500; transition: border-color .16s,background-color .16s; }
@@ -150,6 +152,7 @@ html[lang='zh-CN'] .stage-name { font: 500 1.25rem/1.4 var(--sans); }
 @media(max-width:900px) {
   .header-controls { gap: 1.25rem; } .site-header nav { gap: 1rem; }
   .hero { padding-top: 4rem; }
+  .title-ending { display: inline; }
   .stage-description { grid-template-columns: 1fr; gap: .6rem; min-height: 8rem; }
   .stage-description a { justify-self: start; }
 }
