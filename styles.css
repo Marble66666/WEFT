@@ -5,7 +5,7 @@
   --sans: -apple-system,BlinkMacSystemFont,'Helvetica Neue','PingFang SC','Microsoft YaHei',Arial,sans-serif;
   --serif: Georgia,'Times New Roman',serif;
   --mono: 'SFMono-Regular',Consolas,'Liberation Mono',monospace;
-  --reading: 48rem; --figure: var(--reading); --gutter: 3rem;
+  --reading: 60rem; --figure: var(--reading); --gutter: 3rem;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
@@ -30,7 +30,7 @@ strong { color: var(--ink); font-weight: 600; }
 
 /* A quiet masthead, with color reserved for navigation and focus. */
 .site-header { position: sticky; top: 0; z-index: 20; background: #faf9f6f5; border-bottom: 1px solid var(--line); backdrop-filter: blur(12px); }
-.header-inner { width: min(72rem,calc(100% - var(--gutter))); min-height: 4.25rem; display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; }
+.header-inner { min-height: 4.25rem; display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; }
 .brand { display: inline-flex; gap: .6rem; align-items: center; font-weight: 650; font-size: 1.1rem; letter-spacing: -.025em; }
 .brand img { width: 1.65rem; height: 1.35rem; }
 .header-controls { display: flex; gap: 2rem; align-items: center; min-width: 0; }
@@ -44,7 +44,6 @@ strong { color: var(--ink); font-weight: 600; }
 
 /* The title reads as a paper title, not an oversized product logo. */
 .hero { padding-block: 5.25rem 4.5rem; }
-.hero > .reading { width: min(60rem,calc(100% - var(--gutter))); }
 .hero .eyebrow { display: flex; align-items: center; }
 .hero .eyebrow::before { content: ''; width: 1.5rem; height: 2px; margin-right: .75rem; background: var(--accent); flex-shrink: 0; }
 .hero h1 { font: 400 clamp(2.35rem,4.5vw,3.25rem)/1.13 var(--serif); letter-spacing: -.045em; margin-top: 1.5rem; text-wrap: balance; }
@@ -159,7 +158,7 @@ html[lang='zh-CN'] .stage-name { font: 500 1.25rem/1.4 var(--sans); }
 @media(max-width:680px) {
   :root { --gutter: 2.5rem; }
   html { scroll-padding-top: 8.5rem; } body { font-size: 1rem; line-height: 1.85; }
-  .header-inner { width: calc(100% - 1.5rem); flex-wrap: wrap; gap: 0; padding-top: .55rem; }
+  .header-inner { flex-wrap: wrap; gap: 0; padding-top: .55rem; }
   .header-controls { display: contents; }
   .site-header nav { order: 3; width: 100%; gap: .25rem; justify-content: space-between; overflow-x: auto; scrollbar-width: none; margin-top: .25rem; }
   .site-header nav a { padding-block: .8rem; font-size: .75rem; min-height: 2.75rem; }
@@ -188,7 +187,7 @@ html[lang='zh-CN'] .stage-name { font: 500 1.25rem/1.4 var(--sans); }
   .stat-line dd { font-size: 1.8rem; }
   .training-notes article>div { display: block; } .training-notes h3 { margin-top: .4rem; }
   .training-notes article p { margin-left: 0; } .runtime-top h3 { font-size: 1.45rem; }
-  .result-highlight dl { gap: .75rem; } .result-highlight dd { font-size: 1.8rem; }
+  .result-highlight dl { gap: .75rem; } .result-highlight dd { font-size: clamp(1.5rem,6vw,1.8rem); }
   .result-highlight dd>span { padding-left: .2rem; font-size: .625rem; } .result-highlight dt { font-size: .6875rem; }
   .closing { padding-block: 2.5rem; } .citation-heading { padding-inline: 1rem; }
   .citation pre { padding-inline: 1rem; font-size: .6875rem; white-space: pre; overflow-wrap: normal; overflow-x: auto; }
